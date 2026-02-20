@@ -1,0 +1,33 @@
+================================================================================
+                    COPY AND PASTE THESE COMMANDS
+================================================================================
+
+Open PowerShell, navigate to the project directory, and run these commands:
+
+cd D:\energy\energy-analytics-system
+
+# Remove unwanted files
+rm deployment_info.json
+rm report.txt
+rm NEXT_STEP.txt
+rm RUN_THIS_NOW.txt
+rm TEST_LAMBDA_NOW.txt
+rm FINAL_STEPS.txt
+rm PUSH_TO_GITHUB_NOW.txt
+rm RUN_THIS_TO_PUSH_GITHUB.txt
+
+# Add, commit, and push
+git add .
+git commit -m "Add comprehensive documentation and cleanup temporary files"
+git push origin main
+
+================================================================================
+                    THAT'S IT!
+================================================================================
+
+After running these commands, visit:
+https://github.com/vaishal-coder/Cloud-Native-Energy-Analytics-System
+
+Your updated repository will be live!
+
+================================================================================

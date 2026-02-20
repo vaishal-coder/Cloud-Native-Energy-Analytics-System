@@ -1,0 +1,11 @@
+# Lambda layer requirements
+# These need to be packaged as a Lambda layer or included in deployment package
+
+pandas>=1.5.0
+numpy>=1.23.0
+prophet>=1.1.0
+pyarrow>=10.0.0
+python-dateutil>=2.8.0
+
+# Optional for GenAI
+openai>=0.27.0

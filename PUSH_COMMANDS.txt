@@ -1,0 +1,79 @@
+================================================================================
+                    SIMPLE COMMANDS TO PUSH TO GITHUB
+================================================================================
+
+Open PowerShell in the energy-analytics-system directory and run:
+
+================================================================================
+OPTION 1: AUTOMATED SCRIPT (EASIEST)
+================================================================================
+
+.\cleanup_and_push.ps1
+
+This will:
+✓ Remove temporary files
+✓ Add all changes
+✓ Commit with message
+✓ Push to GitHub
+
+================================================================================
+OPTION 2: MANUAL COMMANDS (STEP BY STEP)
+================================================================================
+
+# 1. Remove unwanted files
+rm deployment_info.json
+rm report.txt
+rm NEXT_STEP.txt
+rm RUN_THIS_NOW.txt
+rm TEST_LAMBDA_NOW.txt
+rm FINAL_STEPS.txt
+rm PUSH_TO_GITHUB_NOW.txt
+rm RUN_THIS_TO_PUSH_GITHUB.txt
+rm START_HERE_FINAL.md
+
+# 2. Add all changes
+git add .
+
+# 3. Commit
+git commit -m "Add comprehensive documentation and cleanup temporary files"
+
+# 4. Push to GitHub
+git push origin main
+
+================================================================================
+OPTION 3: ONE-LINE COMMAND
+================================================================================
+
+rm deployment_info.json, report.txt, NEXT_STEP.txt, RUN_THIS_NOW.txt, TEST_LAMBDA_NOW.txt, FINAL_STEPS.txt, PUSH_TO_GITHUB_NOW.txt, RUN_THIS_TO_PUSH_GITHUB.txt, START_HERE_FINAL.md; git add .; git commit -m "Add comprehensive documentation and cleanup temporary files"; git push origin main
+
+================================================================================
+IF YOU GET ERRORS
+================================================================================
+
+Error: "fatal: not a git repository"
+Fix: git init
+
+Error: "remote origin already exists"
+Fix: git remote set-url origin https://github.com/vaishal-coder/Cloud-Native-Energy-Analytics-System.git
+
+Error: "failed to push"
+Fix: git pull origin main --rebase
+     git push origin main
+
+Error: "Permission denied"
+Fix: Make sure you're logged in to GitHub
+     gh auth login
+
+================================================================================
+VERIFY AFTER PUSH
+================================================================================
+
+Visit: https://github.com/vaishal-coder/Cloud-Native-Energy-Analytics-System
+
+Check:
+✓ All files are there
+✓ README displays correctly
+✓ No sensitive data visible
+✓ Documentation files present
+
+================================================================================
